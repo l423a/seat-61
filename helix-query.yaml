@@ -8,9 +8,9 @@ indices:
       lastModified:
         select: none
         value: parseTimestamp(headers["last-modified"], "ddd, DD MMM YYYY hh:mm:ss GMT")
-    title:
-      select: main h1
-      value: textContent(el)
-    image:
-      select: head > meta[property="og:image"]
-      value: attribute(el, "content")
+      title:
+        select: main h1
+        value: textContent(el)
+      image:
+        select: head > meta[property="og:image"]
+        value: attribute(el, "content")
